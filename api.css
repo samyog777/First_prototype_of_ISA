@@ -1,0 +1,91 @@
+/* Css for api */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1,h2 {
+    text-align: center;
+    color: aliceblue;
+}
+
+.search-container { 
+    margin-bottom: 100px;
+}
+
+
+#search-input {
+    width: 80%;
+    padding: 10px;
+    background-color:rgb(160, 151, 145);
+    border-radius: 20px 20px;
+}
+
+#search-input:hover {
+    background-color: rgb(76, 72, 69);
+    border-radius: 10px 150px;
+}
+
+#search-button {
+    background-color: rgb(13, 67, 10);
+    border-radius: 10px 150px;
+    padding: 10px 10px;
+}
+
+#search-button:hover {
+    background-color: blue;
+    border-radius: 150px 10px;
+}
+
+#movie-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 50px;
+}
+
+.movie-card {
+    border: 1px solid #e8e0e0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-card h3 {
+    margin-top: 10px;
+    color: white;
+}
+
+.movie-card p {
+    font-size: 15px;
+    color: antiquewhite;
+}
+
+#error-message {
+    color:rgb(35, 21, 224);
+    text-align: center;
+}
+
+#attribution {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color:rgb(14, 73, 82)
+}
+
+@media screen and (max-width:768px){
+    .container {
+        padding: 10px;
+    }
+}
